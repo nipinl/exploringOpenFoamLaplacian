@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
      { 
          label cellI = vfp.faceCells()[faceI]; 
 	 Info<<" CellI =  "<<cellI<<endl;
+
          wdiag[cellI] += TEqn.internalCoeffs()[patchI][faceI]; 
          wsource[cellI] += TEqn.boundaryCoeffs()[patchI][faceI]; 
      } 
