@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     label Nc = mesh.nCells(); 
     Info<<"Number of Cells =  "<<Nc<<endl; 
     fvScalarMatrix TEqn 
+    //(fvm::laplacian(DT, T) + su ); 
     (fvm::laplacian(DT, T) + su + fvm::Sp(sp, T)); 
     
         Info<<"Diagonal elements:"<<endl<<TEqn.diag()<<endl; 
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
      forAll(vfp, faceI) 
      { 
          label cellI = vfp.faceCells()[faceI]; 
-	 Info<<" CellI =  "<<cellI<<endl;
+	 //Info<<" CellI =  "<<cellI<<endl;
 
 
          wdiag[cellI] += TEqn.internalCoeffs()[patchI][faceI]; 
