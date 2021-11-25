@@ -1,0 +1,2 @@
+myThermalConductionSolver.C 
+EXE = $(FOAM_USER_APPBIN)/myThermalConductionSolver
