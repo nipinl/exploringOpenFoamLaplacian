@@ -1,0 +1,8 @@
+
+
+# ignore all objectc
+*.o
+
+# ignore all deps
+*.dep
+
