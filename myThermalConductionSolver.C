@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
     label Nc = mesh.nCells(); 
     Info<<"Number of Cells =  "<<Nc<<endl; 
     fvScalarMatrix TEqn 
-    //(fvm::laplacian(DT, T) + su ); 
     (fvm::laplacian(DT, T) + su + fvm::Sp(sp, T)); 
     
         Info<<"Diagonal elements:"<<endl<<TEqn.diag()<<endl; 
@@ -38,6 +37,9 @@ int main(int argc, char *argv[])
          wsource[cellI] += TEqn.boundaryCoeffs()[patchI][faceI]; 
      } 
     } 
+    while (simple.loop(runTime))
+    {
+    }
     // write to file 
      wdiag.write(); 
      wsource.write(); 
