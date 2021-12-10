@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "exploringSimpleFoam.C": "cpp",
+        "fvcFluxTemplates.C": "cpp",
+        "findRefCell.C": "cpp",
+        "myThermalConductionSolver.C": "cpp",
+        "subLoopTime.C": "cpp",
+        "simpleControl.C": "cpp",
+        "SIMPLEControlOpt.C": "cpp",
+        "simple.C": "cpp",
+        "fvOption.C": "cpp",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "string_view": "cpp",
+        "data.C": "cpp",
+        "solutionControl.H": "cpp"
+    }
+}
