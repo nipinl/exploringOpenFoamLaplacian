@@ -3,9 +3,7 @@
 //************************************************************// 
 int main(int argc, char *argv[]) 
 { 
-    #include "postProcess.H"
 
-    #include "addCheckCaseOptions.H"
     #include "setRootCaseLists.H" 
     #include "createTime.H" 
     #include "createMesh.H" 
@@ -14,10 +12,11 @@ int main(int argc, char *argv[])
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * // 
     label Nc = mesh.nCells(); 
     Info<<"Number of Cells =  "<<Nc<<endl; 
-    //(fvm::laplacian(DT, T) + su ); 
     fvScalarMatrix TEqn
    		     (
-		      fvm::laplacian(DT, T) + su + fvm::Sp(sp, T) 
+		      //fvm::laplacian(DT, T) + su + fvm::Sp(sp, T) 
+		      //above line replaced by the one below,added fvOptions in rhs, followed by constrain & correct are the  change added for fvOptions. Then added createFvOptions.H in the createFields.H
+		      fvm::laplacian(DT, T) 
 		      == 
 		      fvOptions(T)
 		     );

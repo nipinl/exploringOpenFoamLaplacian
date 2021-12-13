@@ -30,6 +30,7 @@ dimensionedScalar DT
 	transportProperties 
 );
 
+/*
 dimensionedScalar su 
 ( 
     "su",
@@ -45,3 +46,5 @@ dimensionedScalar sp
 Info << "DT: " << DT << endl; 
 Info << "su: " << su << endl; 
 Info << "sp: " << sp << endl; 
+*/
+#include "createFvOptions.H"

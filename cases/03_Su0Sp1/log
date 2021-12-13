@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : myThermalConductionSolver
+Date   : Dec 10 2021
+Time   : 13:24:18
+Host   : nipinl-pc
+PID    : 11149
+I/O    : uncollated
+Case   : /home/nipinl/OpenFOAM/nipinl-v2012/run/myThermalConductionSolver/03_Su0Sp1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+DT: DT [0 2 -1 0 0 0 0] 0.1
+su: su [0 0 -1 1 0 0 0] 0
+sp: sp [0 0 -1 0 0 0 0] 1
+Number of Cells =  9
+Diagonal elements:
+9(-0.19 -0.29 -0.19 -0.29 -0.39 -0.29 -0.19 -0.29 -0.19)
+Upper elements:
+
+12
+(
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+)
+
+Lower elements:
+
+12
+(
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+)
+
+boundaryCoeffs:
+
+5
+(
+3(-70 -70 -70)
+3{0}
+3(-60 -60 -60)
+3(-80 -80 -80)
+0()
+)
+
+internalCoeffs:
+
+5
+(
+3(-0.2 -0.2 -0.2)
+3{0}
+3(-0.2 -0.2 -0.2)
+3(-0.2 -0.2 -0.2)
+0()
+)
+
+Size of boundaryField is 5
+DILUPBiCG:  Solving for T, Initial residual = 1, Final residual = 5.12596e-07, No Iterations 5
+
+hai from myThermalConductionSolver
+
