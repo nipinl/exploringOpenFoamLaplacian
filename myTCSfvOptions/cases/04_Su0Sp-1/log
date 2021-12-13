@@ -1,0 +1,99 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : myTCSfvOptions
+Date   : Dec 13 2021
+Time   : 12:27:10
+Host   : nipinl-pc
+PID    : 14932
+I/O    : uncollated
+Case   : /home/nipinl/OpenFOAM/nipinl-v2012/run/myTCSfvOptions/04_Su0Sp-1
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Creating finite volume options from "system/fvOptions"
+
+Selecting finite volume options type scalarSemiImplicitSource
+    Source: energySource_1
+    - selecting all cells
+    - selected 9 cell(s) with volume 0.09
+Number of Cells =  9
+DICPBiCGStab:  Solving for T, Initial residual = 1, Final residual = 7.37398e-08, No Iterations 3
+Diagonal elements:
+9(-0.2 -0.3 -0.2 -0.3 -0.4 -0.3 -0.2 -0.3 -0.2)
+Upper elements:
+
+12
+(
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+)
+
+Lower elements:
+
+12
+(
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+0.1
+)
+
+boundaryCoeffs:
+
+5
+(
+3(-70 -70 -70)
+3{-0}
+3(-60 -60 -60)
+3(-80 -80 -80)
+0()
+)
+
+internalCoeffs:
+
+5
+(
+3(-0.2 -0.2 -0.2)
+3{0}
+3(-0.2 -0.2 -0.2)
+3(-0.2 -0.2 -0.2)
+0()
+)
+
+Size of boundaryField is 5
+DICPBiCGStab:  Solving for T, Initial residual = 6.44809e-08, Final residual = 6.44809e-08, No Iterations 0
+
+hai from myTCSfvOptions
+
